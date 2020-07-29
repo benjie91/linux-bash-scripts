@@ -8,6 +8,7 @@ services:
     volumes:
         - "./storage:/verdaccio/storage"
         - "./conf:/verdaccio/conf"
+    network_mode: "host"
 volumes:
   verdaccio:
     driver: local
